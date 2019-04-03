@@ -1,7 +1,4 @@
-// Variables
-
-// Restated Bootstrap Variables
-
+// Styling for the team section
 $white: #fff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
@@ -15,3 +12,20 @@ $gray-900: #212529 !default;
 $black: #000 !default;
 
 $primary: #fed136 !default;
+.team-member {
+  margin-bottom: 50px;
+  text-align: center;
+  img {
+    width: 225px;
+    height: 225px;
+    border: 7px solid $white;
+  }
+  h4 {
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-transform: none;
+  }
+  p {
+    margin-top: 0;
+  }
+}
