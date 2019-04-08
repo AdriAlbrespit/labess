@@ -10,16 +10,11 @@
   color: white;
   border: 0;
   background-color: #fed136;
-  float: left;
 }
 
-#mainNav .navbar-collapse{
-  float: right;
-}
-
-/*#mainNav .navbar-brand {
+#mainNav .navbar-brand {
   color: #fed136;
-}*/
+}
 
 #mainNav .navbar-brand.active,
 #mainNav .navbar-brand:active,
@@ -29,7 +24,7 @@
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  font-size: 125%;
+  font-size: 90%;
   font-weight: 400;
   padding: 0.75em 0;
   letter-spacing: 1px;
@@ -71,11 +66,3 @@
   }
 }
 
-
-  #mainNav.fixed-top {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-}
