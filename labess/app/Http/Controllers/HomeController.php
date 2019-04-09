@@ -5,24 +5,30 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
+
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
+public function index()
     {
-        $this->middleware('auth');
+        if (auth()->user()->isAdmin == 1) {
+            return view('admin');    
+        } 
+
+        else {
+            return view('home');
+        }
+
     }
 
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
-    public function index()
+public function logout()
     {
-        return view('home');
+        auth()-> logout();      //deconnecte admin
+        return redirect('/login');       //redirige sur homepage
     }
+/*        return view('home');
+    }
+    public function admin()
+    {
+        return view('admin');
+    }
+*/
 }
