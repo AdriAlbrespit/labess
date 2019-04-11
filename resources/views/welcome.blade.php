@@ -70,9 +70,8 @@
   <header class="masthead">
     <div class="container">
       <div class="intro-text">
-        <div class="intro-lead-in">Welcome To Our Studio!</div>
-        <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#quisommesnous">Tell Me More</a>
+        <div class="intro-lead-in">Pour que les petits princes deviennent rois !</div>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#quisommesnous">En savoir plus</a>
       </div>
     </div>
   </header>
@@ -83,7 +82,7 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Qui sommes nous ?</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <h3 class="section-subheading text-muted">Parce que la vie est précieuse, Labess oeuvre dans le but de permettre à des enfants malades d'accéder à des soins de façon régulière. Améliorer leur quotidien, leur permettre de grandir et de vivre, telles sont nos missions !</h3>
         </div>
       </div>
       <div class="row text-center">
@@ -92,21 +91,21 @@
             <img class="img-fluid" src="img/quisommesnous/001-main.png" alt="">
           </a>
           <h4 class="service-heading">Bénévolat</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+          <p class="text-muted">Vous souhaitez participer à nos missions ? Nous aider dans nos projets? Devenez bénévoles !</p>
         </div>
         <div class="col-md-4">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
             <img class="img-fluid" src="img/quisommesnous/002-trousse.png" alt="">
           </a>
           <h4 class="service-heading">Aide</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+          <p class="text-muted">Découvrez les partenaires qui nous aident chaque jour à réaliser nos missions.</p>
         </div>
         <div class="col-md-4">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
             <img class="img-fluid" src="img/quisommesnous/003-coeur.png" alt="">
           </a>
           <h4 class="service-heading">Soutien</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+          <p class="text-muted"> Engagez vous à nos côtés! Faire un don ponctuel, devenir donateur régulier ou rejoindre notre réseau de parrains c'est grâce à votre aide que nous pouvons construire un monde meilleur pour tous les enfants.</p>
         </div>
       </div>
     </div>
@@ -118,7 +117,7 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Nos missions</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <h3 class="section-subheading text-muted">La vocation de l’association était de promouvoir l’accès des populations défavorisées à des soins pharmaceutique de qualité.</h3>
         </div>
       </div>
       <div class="row">
@@ -141,8 +140,8 @@
             <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>Acheter les médicaments</h4>
-            <p class="text-muted">Grâce aux ordonnances fournies</p>
+            <h4>Gestion des dons</h4>
+            <p class="text-muted"> Achats et dons des soins et médicaments</p>
           </div>
            <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -156,7 +155,7 @@
           </a>
           <div class="portfolio-caption">
             <h4>Expédier</h4>
-            <p class="text-muted">Les médicaments aux hôpitaux</p>
+            <p class="text-muted"> Les soins au populations issus des pays démunis</p>
           </div>
            <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -174,7 +173,7 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Évènements</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <h3 class="section-subheading text-muted">Suivez notre fil d'actualité ! </h3>
         </div>
       </div>
       <div class="row">
@@ -186,11 +185,11 @@
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h4>2009-2011</h4>
-                  <h4 class="subheading">Our Humble Beginnings</h4>
+                  <h4>2019</h4>
+                  <h4 class="subheading">labess est né !</h4>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  <p class="text-muted">Des étudiants étrangers désireux d'apporter de l'aide à leur pays d'origines ont décidé de créer LABESS. Leur ambition ? Apporter des soins à des enfants malades issus de milieux démunis et ne pouvant se procurer des médicaments</p>
                 </div>
               </div>
             </li>
