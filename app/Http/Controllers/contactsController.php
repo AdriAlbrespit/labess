@@ -34,22 +34,31 @@ class contactsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
+    {   
+        
         $request->validate([
         'name'=>'required',
-        'tel'=> 'required',
         'email' => 'required',
         'message' => 'required'
       ]);
 
       $Contacts = new contacts([
-        'name' => $request->get('name'),
-        'tel'=> $request->get('tel'),
-        'email'=> $request->get('email'),
-        'message'=> $request->get('message')
+        'name' => $request->name,
+        'tel'=> $request->tel,
+        'email'=> $request->email,
+        'message'=> $request->message
       ]);
       $Contacts->save();
-      return redirect('/contacts')->with('success', 'Stock has been added');
+
+      $name=$request->input('name');
+      $email=$request->input('email');
+      $tel = $request->input('tel');
+      $msg = $request->input('message');
+      $insert= DB::insert('insert into contacts(name,email,tel,message) values(?, ?)',[$name,$email,$tel,$message]);
+      //DB::insert('insert into users (id, name) values (?, ?)', [1, 'Dayle']);
+      //return 'yo';
+      return $name;
+      //return redirect('/')->with('success', 'Message envoyé');
     }
 
     /**
