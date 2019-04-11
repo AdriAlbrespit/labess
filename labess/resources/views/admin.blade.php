@@ -284,13 +284,29 @@ desired effect
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Page Header
-        <small>Optional description</small>
+        Message reçu
+        <small>Onglet "Contactez-nous"</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
         <li class="active">Here</li>
       </ol>
+      <table>
+        <tr>
+          <td>Nom</td>
+          <td>Email</td>
+          <td>Téléphone</td>
+          <td>Message</td>
+        </tr>
+        @foreach ($contacts as $contacts)
+          <tr>
+            <td>{{ $contacts->name }}</td> 
+            <td>{{ $contacts->email }}</td> 
+            <td>{{ $contacts->tel }}</td> 
+            <td>{{ $contacts->message }}</td>
+          </tr>
+        @endforeach
+      </table>
     </section>
 
     <!-- Main content -->
@@ -402,6 +418,7 @@ desired effect
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
      Both of these plugins are recommended to enhance the
      user experience. -->
+
 
 </body>
 </html>
