@@ -25,7 +25,10 @@
   <link href="css/agency.min.css" rel="stylesheet">
   <link href="css/_navbar.css" rel="stylesheet">
   <link href="css/app.css" rel="stylesheet">
+  <link href="css/_team.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://www.paypal.com/sdk/js?client-id=AepF2md3ctHo8LG3DHdLPmzlsqitIgdLMPahDMnpD3WQT1n64VWYYBQf0EGMXu7z8tU1631N8gXy4fLv&currency=EUR"></script>
   
 </head>
 
@@ -258,7 +261,7 @@
       <div class="row">
         <div class="col-sm-4">
           <div class="team-member">
-            <button style="border-radius: 50%; padding: 25px;"><img class="mx-auto rounded-circle" src="img/team/1.jpg" alt=""></button>
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><img class="mx-auto rounded-circle" src="img/team/1.jpg" alt=""></button>
            </div>
         </div>
         <div class="col-sm-4">
@@ -285,8 +288,37 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-12 text-center">
-           <a href="{{route('contacts.create')}}" class="btn btn-primary btn-xl text-uppercase" type="">Cliquer ici</a>   
+        <div class="col-lg-12">
+          <form  name="sentMessage" novalidate="novalidate" method="POST" action="{{ url('/store') }}">
+          {{ csrf_field() }}
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input class="form-control" id="name" name="name" type="text" placeholder="Votre nom *" required="required" data-validation-required-message="Merci de renseigner votre nom.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="email" name="email" type="email" placeholder="Votre mail * " required="required" data-validation-required-message="Merci de renseigner votre mail.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="tel" name="tel" type="tel" placeholder="Votre numéro de téléphone ">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <textarea class="form-control" id="message" message="message" placeholder="Votre message *" required="required" data-validation-required-message="Merci de renseigner le message."></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-lg-12 text-center">
+                <div id="success"></div>
+                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Envoyer</button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
@@ -436,6 +468,38 @@
     </div>
   </div>
 
+          <!-- Modal pour afficher le paiement unique -->
+	  <div class="modal fade" id="myModal" role="dialog">
+	    <div class="modal-dialog">
+	    
+	      <!-- Modal content-->
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <h4 class="modal-title">Effectuer un don:</h4>
+	        </div>
+	        <div class="modal-body">
+	        	<div class="container">
+	        		<p>Je souhaite donner une seule fois :</p>
+	          		<div class="row">
+        				<div class="col-md-6">
+				            <button class="btn btn-default" id="don-unique-1">1 €</button>
+				            <button class="btn btn-default" id="don-unique-5">5 €</button>
+				            <button class="btn btn-default" id="don-unique-10">10 €</button>
+				            <button class="btn btn-default" id="don-unique-Other">Un cochon rose</button>
+				        </div>
+        			<div class="col-md-6">
+					  	<div id="paypal-button-container"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="js/jquery.min.js"></script>
@@ -450,6 +514,31 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/agency.min.js"></script>
+
+  <!-- Custom script for paypal payment platform -->
+   <script>  
+    paypal.Buttons({
+    createOrder: function(data, actions) {
+      // Set up the transaction
+      return actions.order.create({
+        purchase_units: [{
+          amount: {
+            value: '5'
+          }
+        }]
+      });
+    },
+    
+    onApprove: function (data, actions){
+      // Capture the funds from the transaction
+      return actions.order.capture().then(function(details){
+        //Show a success message to your buyer
+        alert('Donation completed by ' + details.payer.name.given_name);
+      });
+    }
+  }).render('#paypal-button-container');
+</script>
+
 
 </body>
 
