@@ -8,7 +8,7 @@
 </style>
 <div class="card uper">
   <div class="card-header">
-    Add Contact
+    Nouveau Contact
   </div>
   <div class="card-body">
     @if ($errors->any())
@@ -23,22 +23,22 @@
       <form method="post" action="{{ route('contacts.store') }}">
           <div class="form-group">
               @csrf
-              <label for="name">Share Name:</label>
+              <label for="name">Nom:</label>
               <input type="text" class="form-control" name="name"/>
           </div>
           <div class="form-group">
-              <label for="price">Share Tel :</label>
+              <label for="price">Numéro de téléphone :</label>
               <input type="text" class="form-control" name="tel"/>
           </div>
           <div class="form-group">
-              <label for="quantity">Share E-mail :</label>
+              <label for="quantity">Adresse mail :</label>
               <input type="text" class="form-control" name="email"/>
           </div>
           <div class="form-group">
-              <label for="quantity">Share Message :</label>
-              <input type="text" class="form-control" name="message"/>
+              <label for="quantity">Message :</label>
+              <textarea type="text" class="form-control" name="message"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Add</button>
+          <button type="submit" class="btn btn-primary">Envoyer</button>
       </form>
   </div>
 </div>

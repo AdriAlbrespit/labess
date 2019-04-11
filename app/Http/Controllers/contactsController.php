@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\contacts;
+use Illuminate\Support\Facades\DB;
 
-class contactsController extends Controller
-{
+class contactsController extends Controller {
     /**
      * Display a listing of the resource.
      *
@@ -35,7 +35,6 @@ class contactsController extends Controller
      */
     public function store(Request $request)
     {   
-        
         $request->validate([
         'name'=>'required',
         'email' => 'required',
@@ -43,22 +42,14 @@ class contactsController extends Controller
       ]);
 
       $Contacts = new contacts([
-        'name' => $request->name,
-        'tel'=> $request->tel,
-        'email'=> $request->email,
-        'message'=> $request->message
+        'name' => $request->get('name'),
+        'tel'=> $request->get('tel'),
+        'email'=> $request->get('email'),
+        'message'=> $request->get('message'),
       ]);
       $Contacts->save();
 
-      $name=$request->input('name');
-      $email=$request->input('email');
-      $tel = $request->input('tel');
-      $msg = $request->input('message');
-      $insert= DB::insert('insert into contacts(name,email,tel,message) values(?, ?)',[$name,$email,$tel,$message]);
-      //DB::insert('insert into users (id, name) values (?, ?)', [1, 'Dayle']);
-      //return 'yo';
-      return $name;
-      //return redirect('/')->with('success', 'Message envoyé');
+      return redirect('/')->with('success', 'Message envoyé');
     }
 
     /**

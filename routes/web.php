@@ -31,4 +31,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/logout','HomeController@logout');
 
-Route::post('/store', 'contactsController@store');
+//Route::post('/store', 'contactsController@store');
