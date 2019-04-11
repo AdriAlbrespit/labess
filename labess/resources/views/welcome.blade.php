@@ -15,6 +15,7 @@
 
   <!-- Custom fonts for this template -->
   <link href="css/all.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -245,7 +246,7 @@
 
 
 
-  <!-- AGIR -->
+  <!-- SOUTENEZ -->
   <section class="bg-light" id="agir">
     <div class="container">
       <div class="row">
@@ -257,7 +258,7 @@
       <div class="row">
         <div class="col-sm-4">
           <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
+            <button class="w3-button w3-circle btn-don"><img class="mx-auto rounded-circle" src="img/team/1.jpg" alt=""></button>
           </div>
         </div>
         <div class="col-sm-4">
