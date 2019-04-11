@@ -262,7 +262,8 @@
       <div class="row">
         <div class="col-sm-4">
           <div class="team-member">
-            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><img class="mx-auto rounded-circle" src="img/team/1.jpg" alt=""></button>
+            <button type="button" class="btn btn-default" 
+            data-toggle="modal" data-target="#myModal"><img class="mx-auto rounded-circle" src="img/team/1.jpg" alt=""></button>
            </div>
         </div>
         <div class="col-sm-4">
