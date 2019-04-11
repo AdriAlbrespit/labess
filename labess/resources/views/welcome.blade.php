@@ -258,7 +258,7 @@
       <div class="row">
         <div class="col-sm-4">
           <div class="team-member">
-            <button class="w3-button w3-circle "><img class="mx-auto rounded-circle" src="img/team/1.jpg" alt=""></button>
+            <button class="w3-button w3-circle btn-don"><img class="mx-auto rounded-circle" src="img/team/1.jpg" alt=""></button>
           </div>
         </div>
         <div class="col-sm-4">
