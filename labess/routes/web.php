@@ -21,6 +21,19 @@ Route::get('hello', function () {
 
 Route::resource('contacts', 'contactsController');
 
+
 Auth::routes();
 
+Route::group(['middleware' => ['admin']], function () {
+    Route::get('admin/routes', 'HomeController@admin');
+});
+
 Route::get('/home', 'HomeController@index')->name('home');
+
+/*
+Route::prefix('admin')->namespace('Back')->group(function () {
+    Route::name('admin')->get('/', 'AdminController@index');
+});
+*/
+
+Route::get('/logout', 'HomeController@logout');
