@@ -461,10 +461,10 @@
 	        		<p>Je souhaite donner une seule fois :</p>
 	          		<div class="row">
         				<div class="col-md-6">
-				            <button class="btn btn-default" id="don-unique-1">1 €</button>
-				            <button class="btn btn-default" id="don-unique-5">5 €</button>
-				            <button class="btn btn-default" id="don-unique-10">10 €</button>
-				            <button class="btn btn-default" id="don-unique-Other">Un cochon rose</button>
+				            <button onclick="getvalue()"value = "1" class="btn btn-default" id="don-unique-1">1 €</button>
+				            <button onclick="getvalue()" value = "5" class="btn btn-default" id="don-unique-5">5 €</button>
+				            <button onclick="getvalue()" value = "10" class="btn btn-default" id="don-unique-10">10 €</button>
+				            <button onclick="getvalue()" value = "100" class="btn btn-default" id="don-unique-Other">Un cochon rose</button>
 				        </div>
         			<div class="col-md-6">
 					  	<div id="paypal-button-container"></div>
@@ -495,19 +495,24 @@
   <script src="js/agency.min.js"></script>
 
   <!-- Custom script for paypal payment platform -->
-   <script>  
+   <script>
+    var t=2; 
+
     paypal.Buttons({
+      style: {
+        color : 'gold',
+        shape: 'pill'
+      },
     createOrder: function(data, actions) {
       // Set up the transaction
       return actions.order.create({
         purchase_units: [{
           amount: {
-            value: '5'
+            value: t
           }
         }]
       });
     },
-    
     onApprove: function (data, actions){
       // Capture the funds from the transaction
       return actions.order.capture().then(function(details){
@@ -516,7 +521,14 @@
       });
     }
   }).render('#paypal-button-container');
+
+  function getvalue(){
+    t = this.value;
+  }
+
 </script>
+
+
 
 
 </body>
