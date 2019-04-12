@@ -288,7 +288,7 @@
 
 
   <!-- Contact -->
-  <section id="contact">
+    <section id="contact">
   <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -296,37 +296,8 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-12">
-          <form  name="sentMessage" novalidate="novalidate" method="POST" action="{{ url('/store') }}">
-          {{ csrf_field() }}
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input class="form-control" id="name" name="name" type="text" placeholder="Votre nom *" required="required" data-validation-required-message="Merci de renseigner votre nom.">
-                  <p class="help-block text-danger"></p>
-                </div>
-                <div class="form-group">
-                  <input class="form-control" id="email" name="email" type="email" placeholder="Votre mail * " required="required" data-validation-required-message="Merci de renseigner votre mail.">
-                  <p class="help-block text-danger"></p>
-                </div>
-                <div class="form-group">
-                  <input class="form-control" id="tel" name="tel" type="tel" placeholder="Votre numéro de téléphone ">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <textarea class="form-control" id="message" message="message" placeholder="Votre message *" required="required" data-validation-required-message="Merci de renseigner le message."></textarea>
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="clearfix"></div>
-              <div class="col-lg-12 text-center">
-                <div id="success"></div>
-                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Envoyer</button>
-              </div>
-            </div>
-          </form>
+        <div class="col-lg-12 text-center">
+           <a href="{{route('contacts.create')}}" class="btn btn-primary btn-xl text-uppercase" type="">Cliquer ici</a>   
         </div>
       </div>
     </div>
