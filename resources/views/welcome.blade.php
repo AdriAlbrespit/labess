@@ -59,7 +59,7 @@
             <a class="nav-link js-scroll-trigger" href="#agir">SOUTENEZ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Nous contacter</a>
+            <a class="nav-link js-scroll-trigger" href="{{route('contacts.create')}}">Nous contacter</a>
           </li>
         </ul>
       </div>
