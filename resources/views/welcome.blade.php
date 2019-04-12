@@ -262,8 +262,8 @@
       <div class="row">
         <div class="col-sm-4">
           <div class="team-member">
-            <button type="button" class="btn btn-default" 
-            data-toggle="modal" data-target="#myModal"><img class="mx-auto rounded-circle" src="img/team/1.jpg" alt=""></button>
+            <button class="w3-button w3-circle btn-don" 
+            data-toggle="modal" data-target="#modalPaiement"><img class="mx-auto rounded-circle" src="img/team/1.jpg" alt=""></button>
             <p></p>
             <p class="text-muted"><i>Faire un don</i></p>
            </div>
@@ -448,7 +448,7 @@
   </div>
 
           <!-- Modal pour afficher le paiement unique -->
-	  <div class="modal fade" id="myModal" role="dialog">
+	  <div class="modal fade" id="modalPaiement" role="dialog">
 	    <div class="modal-dialog">
 	    
 	      <!-- Modal content-->
