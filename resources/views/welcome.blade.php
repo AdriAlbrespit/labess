@@ -264,17 +264,23 @@
           <div class="team-member">
             <button type="button" class="btn btn-default" 
             data-toggle="modal" data-target="#myModal"><img class="mx-auto rounded-circle" src="img/team/1.jpg" alt=""></button>
+            <p></p>
+            <p class="text-muted"><i>Faire un don</i></p>
            </div>
         </div>
         <div class="col-sm-4">
           <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
+            <button class="w3-button w3-circle btn-don"><img class="mx-auto rounded-circle" src="img/team/2.jpg" alt=""></button>
+            <p></p>
+            <p class="text-muted"><i>À venir ...</i></p>
           </div>
         </div>
         <div class="col-sm-4">
           <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
-          </div>
+            <a href="register"><button class="w3-button w3-circle btn-don"><img class="mx-auto rounded-circle" src="img/team/3.jpg" alt=""></button></a>
+            <p></p>
+            <p class="text-muted"><i>Devenez le parrain d'un enfant malade</i></p>
+            </div>
         </div>
       </div>
     </div>
