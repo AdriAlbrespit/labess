@@ -461,10 +461,11 @@
 	        		<p>Je souhaite donner une seule fois :</p>
 	          		<div class="row">
         				<div class="col-md-6">
-				            <button onclick="getvalue(1)" class="btn btn-default" id="don-unique-1" clicked>1 €</button>
-				            <button onclick="getvalue(5)" class="btn btn-default" id="don-unique-5">5 €</button>
-				            <button onclick="getvalue(10)" class="btn btn-default" id="don-unique-10">10 €</button>
-				            <button onclick="getvalue(100)" class="btn btn-default" id="don-unique-Other">Un cochon rose</button>
+				            <button onclick="getvalue(5)" class="btn btn-default" id="don-unique-1" checked="checked">5 €</button>
+				            <button onclick="getvalue(10)" class="btn btn-default" id="don-unique-5">10 €</button>
+				            <button onclick="getvalue(20)" class="btn btn-default" id="don-unique-10">20 €</button>
+                    <input id="montantSaisi" type="number" class="form-control" placeholder="Entrez le montant choisi">
+                    <button onclick="getvalue(montantSaisi.value)" class="btn btn-default" id="don-unique-Other">Valider montant saisi</button>
 				        </div>
         			<div class="col-md-6">
 					  	<div id="paypal-button-container"></div>
@@ -496,7 +497,7 @@
 
   <!-- Custom script for paypal payment platform -->
    <script>
-   var t = 1;
+   var t = 5;
 
   paypal.Buttons({
       style: {
@@ -523,8 +524,7 @@
   }).render('#paypal-button-container');
 
   function getvalue(val){
-    t = val;
-   
+      t=val;  
   }
 
 </script>
