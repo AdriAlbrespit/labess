@@ -49,7 +49,8 @@ class contactsController extends Controller {
       ]);
       $Contacts->save();
 
-      return redirect('/')->with('success', 'Message envoyé');
+      //return redirect('/')->with('success', 'Message envoyé');
+      return view('confirm');
     }
 
     /**
