@@ -1,6 +1,9 @@
 @extends('layout')
 
 @section('content')
+
+<a href="../"><button type="submit" class="btn btn-primary">Retour à l'accueil</button></a>
+
 <style>
   .uper {
     margin-top: 40px;
@@ -18,7 +21,7 @@
               <li>{{ $error }}</li>
             @endforeach
         </ul>
-      </div><br />
+      </div>
     @endif
       <form method="post" action="{{ route('contacts.store') }}">
           <div class="form-group">
