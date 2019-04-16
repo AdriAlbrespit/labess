@@ -1,6 +1,9 @@
 @extends('layout')
 
 @section('content')
+
+<a href="../"><button type="submit" class="btn btn-primary">Retour à l'accueil</button></a>
+
 <style>
   .uper {
     margin-top: 40px;
@@ -8,7 +11,7 @@
 </style>
 <div class="card uper">
   <div class="card-header">
-    Nouveau Contact
+    <center><b>Formulaire de contact</b></center>
   </div>
   <div class="card-body">
     @if ($errors->any())
@@ -18,12 +21,12 @@
               <li>{{ $error }}</li>
             @endforeach
         </ul>
-      </div><br />
+      </div>
     @endif
       <form method="post" action="{{ route('contacts.store') }}">
           <div class="form-group">
               @csrf
-              <label for="name">Nom:</label>
+              <label for="name">Nom et prénom :</label>
               <input type="text" class="form-control" name="name"/>
           </div>
           <div class="form-group">
@@ -38,7 +41,7 @@
               <label for="quantity">Message :</label>
               <textarea type="text" class="form-control" name="message"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Envoyer</button>
+          <center><button type="submit" class="btn btn-primary">Envoyer</button></center>
       </form>
   </div>
 </div>

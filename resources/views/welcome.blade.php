@@ -47,9 +47,6 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#quisommesnous">Qui sommes-nous ?</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#nosmissions">Nos missions</a>
           </li>
           <li class="nav-item">
@@ -61,6 +58,14 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="{{route('contacts.create')}}">Nous contacter</a>
           </li>
+          <li class="nav-item">
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="login">Se connecter</a>
+          </li>
+        <!--
+          <li class="nav-item">
+            <a href="login"><button ><img src="img/connexion.png"></button></a>
+          </li>
+        -->
         </ul>
       </div>
     </div>
@@ -461,10 +466,11 @@
 	        		<p>Je souhaite donner une seule fois :</p>
 	          		<div class="row">
         				<div class="col-md-6">
-				            <button class="btn btn-default" id="don-unique-1">1 €</button>
-				            <button class="btn btn-default" id="don-unique-5">5 €</button>
-				            <button class="btn btn-default" id="don-unique-10">10 €</button>
-				            <button class="btn btn-default" id="don-unique-Other">Un cochon rose</button>
+				            <button onclick="getvalue(5)" class="btn btn-default" id="don-unique-1" checked="checked">5 €</button>
+				            <button onclick="getvalue(10)" class="btn btn-default" id="don-unique-5">10 €</button>
+				            <button onclick="getvalue(20)" class="btn btn-default" id="don-unique-10">20 €</button>
+                    <input id="montantSaisi" type="number" class="form-control" placeholder="Entrez le montant choisi">
+                    <button onclick="getvalue(montantSaisi.value)" class="btn btn-default" id="don-unique-Other">Valider montant saisi</button>
 				        </div>
         			<div class="col-md-6">
 					  	<div id="paypal-button-container"></div>
@@ -495,19 +501,24 @@
   <script src="js/agency.min.js"></script>
 
   <!-- Custom script for paypal payment platform -->
-   <script>  
-    paypal.Buttons({
+   <script>
+   var t = 5;
+
+  paypal.Buttons({
+      style: {
+        color : 'gold',
+        shape: 'pill'
+      },
     createOrder: function(data, actions) {
       // Set up the transaction
       return actions.order.create({
         purchase_units: [{
           amount: {
-            value: '5'
+            value: t
           }
         }]
       });
     },
-    
     onApprove: function (data, actions){
       // Capture the funds from the transaction
       return actions.order.capture().then(function(details){
@@ -516,7 +527,14 @@
       });
     }
   }).render('#paypal-button-container');
+
+  function getvalue(val){
+      t=val;  
+  }
+
 </script>
+
+
 
 
 </body>
