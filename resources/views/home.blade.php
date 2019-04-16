@@ -61,11 +61,11 @@ desired effect
   <header class="main-header">
 
     <!-- Logo -->
-    <a href="index2.html" class="logo">
+    <a href="home" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>EA</b></span>
+      <span class="logo-mini"><b>ED</b></span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Espace Admin</b></span>
+      <span class="logo-lg"><b>Espace Donateur</b></span>
     </a>
 
     <!-- Header Navbar -->
@@ -99,7 +99,9 @@ desired effect
          <img src="adminlte/img/avatar04.png" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Admin</p>
+          <p>
+            {{{ isset(Auth::user()->name) ? Auth::user()->surname : Auth::user()->email }}}
+          </p>
         </div>
       </div>
 
