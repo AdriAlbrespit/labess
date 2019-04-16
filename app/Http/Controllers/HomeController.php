@@ -12,7 +12,9 @@ public function index()
     {
         if (auth()->user()->isAdmin == 1) {
             $contacts = DB::table('contacts')->get();
-            return view('admin', ['contacts' => $contacts]);
+            $nb_users = DB::table('users')->count();
+            $nb_contacts = DB::table('contacts')->count();
+            return view('admin', ['contacts' => $contacts, 'nb_contacts' => $nb_contacts, 'nb_users' => $nb_users]);
             //return view('admin');
 
         } 

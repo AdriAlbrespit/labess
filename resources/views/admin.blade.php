@@ -136,13 +136,15 @@ desired effect
         Message reçu
         <small>Onglet "Contactez-nous"</small>
       </h1>
-      <table>
+      <table class ="table table-hover">
+      <thead class="thead-dark">
         <tr>
-          <td>Nom</td>
-          <td>Email</td>
-          <td>Téléphone</td>
-          <td>Message</td>
+          <th scope="col">Nom</th>
+          <th scope="col">Email</th>
+          <th scope="col">Téléphone</th>
+          <th scope="col">Message</th>
         </tr>
+      </thead>
         @foreach ($contacts as $contacts)
           <tr>
             <td>{{ $contacts->name }}</td> 
@@ -153,10 +155,39 @@ desired effect
         @endforeach
       </table>
     </section>
-
+  
+    
     <!-- Main content -->
     <section class="content container-fluid">
       @yield('main')
+<!--<canvas id="myChart"></canvas> -->
+    <h1> Tableau de bord </h1>
+    <canvas width="690" height="200" class="chartjs-render-monitor" id="myChart" style="width: 552px; height: 160px; display: block;"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <script>
+        new Chart(document.getElementById("myChart"), {
+            type: 'bar',
+            data: {
+              labels: ["Nombre d'utilisateurs", "Nombre de contacts"],
+              datasets: [
+                {
+                  label: "Nombre d'intéraction",
+                  backgroundColor: ["#3e95cd", "#8e5ea2"],
+                  data: [<?=json_encode($nb_users);?>,<?=json_encode($nb_contacts);?>]
+                }
+              ]
+            },
+            options: {
+              legend: { display: false },
+              title: {
+                display: true,
+                text: "Nombre d'intéraction"
+              }
+            }
+        });
+    </script>
     </section>
     <!-- /.content -->
   </div>
