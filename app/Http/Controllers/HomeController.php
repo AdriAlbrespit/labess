@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
+//use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 
@@ -14,7 +15,8 @@ public function index()
             $contacts = DB::table('contacts')->get();
             $nb_users = DB::table('users')->count();
             $nb_contacts = DB::table('contacts')->count();
-            return view('admin', ['contacts' => $contacts, 'nb_contacts' => $nb_contacts, 'nb_users' => $nb_users]);
+            $name = auth()->user()->name;
+            return view('admin', ['name' => $name,'contacts' => $contacts, 'nb_contacts' => $nb_contacts, 'nb_users' => $nb_users]);
             //return view('admin');
 
         } 
@@ -27,7 +29,7 @@ public function index()
 public function logout()
     {
         auth()-> logout();             //deconnecte admin
-        return redirect('/login');     //redirige sur homepage
+        return redirect('/');     //redirige sur homepage
     }
 }
 

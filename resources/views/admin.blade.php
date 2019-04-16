@@ -99,7 +99,7 @@ desired effect
          <img src="adminlte/img/avatar04.png" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Admin</p>
+          <p><?=$name?></p>
         </div>
       </div>
 
