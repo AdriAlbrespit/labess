@@ -47,9 +47,6 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#quisommesnous">Qui sommes-nous ?</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#nosmissions">Nos missions</a>
           </li>
           <li class="nav-item">
@@ -61,6 +58,14 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="{{route('contacts.create')}}">Nous contacter</a>
           </li>
+          <li class="nav-item">
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="login">Se connecter</a>
+          </li>
+        <!--
+          <li class="nav-item">
+            <a href="login"><button ><img src="img/connexion.png"></button></a>
+          </li>
+        -->
         </ul>
       </div>
     </div>
