@@ -32,3 +32,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/logout','HomeController@logout');
 
 //Route::post('/store', 'contactsController@store');
+
+	//Routes pour le paiement par subscription
+//Pour obtenir le plan ID, a utiliser une fois au début.
+//Route::get('create_paypal_plan', 'PaypalController@create_plan');
+Route::get('/subscribe/paypal', 'PaypalController@paypalRedirect')->name('paypal.redirect');
+Route::get('/subscribe/paypal/return', 'PaypalController@paypalReturn')->name('paypal.return');
