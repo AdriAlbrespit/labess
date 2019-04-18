@@ -133,11 +133,10 @@ desired effect
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
 
-Bienvenue {{{ isset(Auth::user()->name) ? Auth::user()->surname : Auth::user()->email }}}
-
     <!-- Main content -->
-    <section class="content container-fluid">
-      @yield('main')
+    <section class="content container-fluid"><br><br><br><br><br>
+      <center><a style="font-size: 100px; color: black">  Bienvenue {{{ isset(Auth::user()->name) ? Auth::user()->surname : Auth::user()->email }}}</a><br><br><br><br><br><br><img src="img/imageUser.png"></center>
+
     </section>
     <!-- /.content -->
   </div>
