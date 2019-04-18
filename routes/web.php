@@ -38,3 +38,12 @@ Route::get('/logout','HomeController@logout');
 //Route::get('create_paypal_plan', 'PaypalController@create_plan');
 Route::get('/subscribe/paypal', 'PaypalController@paypalRedirect')->name('paypal.redirect');
 Route::get('/subscribe/paypal/return', 'PaypalController@paypalReturn')->name('paypal.return');
+
+
+Route::get('enfants', function () {
+    return view('enfants');
+});
+
+Route::get('param', function () {
+    return view('param');
+});

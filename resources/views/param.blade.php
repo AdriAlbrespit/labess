@@ -63,9 +63,9 @@ desired effect
     <!-- Logo -->
     <a href="home" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>ED</b></span>
+      <span class="logo-mini"><b>EP</b></span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Espace Donateur</b></span>
+      <span class="logo-lg"><b>Espace Parrain</b></span>
     </a>
 
     <!-- Header Navbar -->
@@ -119,10 +119,10 @@ desired effect
 
       <!-- Sidebar Menu -->
       <ul class="sidebar-menu" id="onglets">
-        <li class="active"><a href="home"><center><b>MENU</b></center></a></li>
+        <li><a href="home"><center><b>MENU</b></center></a></li>
         <!-- Optionally, you can add icons to the links -->
-        <li><a href="enfants"><span>Enfants suivis</span></a></li>
-        <li><a href="param"><span>Paramètres</span></a></li>
+        <li><a href="enfants"> <span>Enfants suivis</span></a></li>
+        <li class="active"><a href="param"> <span>Paramètres</span></a></li>
       </ul>
       <!-- /.sidebar-menu -->
     </section>
@@ -132,8 +132,6 @@ desired effect
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-
-Bienvenue {{{ isset(Auth::user()->name) ? Auth::user()->surname : Auth::user()->email }}}
 
     <!-- Main content -->
     <section class="content container-fluid">
