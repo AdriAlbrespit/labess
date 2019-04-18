@@ -268,14 +268,14 @@
         <div class="col-sm-4">
           <div class="team-member">
             <button class="w3-button w3-circle btn-don" 
-            data-toggle="modal" data-target="#modalPaiement"><img class="mx-auto rounded-circle" src="img/team/1.jpg" alt=""></button>
+            data-toggle="modal" data-target="#modalPaiementUnique"><img class="mx-auto rounded-circle" src="img/team/1.jpg" alt=""></button>
             <p></p>
             <p class="text-muted"><i>Faire un don</i></p>
            </div>
         </div>
         <div class="col-sm-4">
           <div class="team-member">
-            <button class="w3-button w3-circle btn-don"><img class="mx-auto rounded-circle" src="img/team/2.jpg" alt=""></button>
+            <button class="w3-button w3-circle btn-don"  data-toggle="modal" data-target="#modalPaiementRecurrent"><img class="mx-auto rounded-circle" src="img/team/2.jpg" alt=""></button>
             <p></p>
             <p class="text-muted"><i>À venir ...</i></p>
           </div>
@@ -453,7 +453,7 @@
   </div-->
 
           <!-- Modal pour afficher le paiement unique -->
-	  <div class="modal fade" id="modalPaiement" role="dialog">
+	  <div class="modal fade" id="modalPaiementUnique" role="dialog">
 	    <div class="modal-dialog">
 	    
 	      <!-- Modal content-->
@@ -485,7 +485,36 @@
 	    </div>
 	  </div>
 
-
+          <!-- Modal pour afficher le paiement mensuel -->
+    <div class="modal fade" id="modalPaiementRecurrent" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Souscrire à un don récurrent:</h4>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <p>Je souhaites donner par mois:</p>
+                <div class="row">
+                <div class="col-lg-12">
+                    <button onclick="submitvalue(5)" class="btn btn-default" id="don-unique-1" checked="checked">5 €</button>
+                    <button onclick="submitvalue(10)" class="btn btn-default" id="don-unique-5">10 €</button>
+                    <button onclick="submitvalue(20)" class="btn btn-default" id="don-unique-10">20 €</button>
+                    <input id="montantSaisiMensuel" type="number" class="form-control" placeholder="Entrez le montant choisi">
+                    <button onclick="submitvalue(montantSaisiMensuel.value)" class="btn btn-default" id="don-unique-Other">Valider montant saisi</button>
+                </div>
+        </div>
+      </div>
+    </div>
+          <div class="modal-footer">
+            <button onclick="" class="btn btn-success">je souscrie à l'abonnement</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
   <!-- Bootstrap core JavaScript -->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
