@@ -31,4 +31,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/logout','HomeController@logout');
 
+Route::get('msg','MessageController@index')->name("id_user");
+Route::post('envoyer','MessageController@store');
+
 //Route::post('/store', 'contactsController@store');

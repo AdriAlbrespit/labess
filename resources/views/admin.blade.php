@@ -133,7 +133,8 @@ desired effect
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Message reçu
+        Messages reçus
+
         <small>Onglet "Contactez-nous"</small>
       </h1>
       <table class ="table table-hover">
@@ -145,12 +146,42 @@ desired effect
           <th scope="col">Message</th>
         </tr>
       </thead>
+        @foreach ($msg_user as $msg_user)
+          <tr>
+            <td>{{ $msg_user->name }}</td> 
+            <td>{{ $msg_user->email }}</td> 
+            <td>{{ $msg_user->tel }}</td> 
+            <td>{{ $msg_user->message }}</td>
+          </tr>
+        @endforeach
+      </table>
+    </section>
+
+    <section class="content-header">
+      <h1>
+        Messages reçus des utilisateurs
+      </h1>
+      <table class ="table table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Nom</th>
+          <th scope="col">Email</th>
+          <th scope="col">Téléphone</th>
+          <th scope="col">Message</th>
+          <th scope="col">Action</th>
+
+        </tr>
+      </thead>
         @foreach ($contacts as $contacts)
           <tr>
             <td>{{ $contacts->name }}</td> 
             <td>{{ $contacts->email }}</td> 
             <td>{{ $contacts->tel }}</td> 
             <td>{{ $contacts->message }}</td>
+            <td>
+              <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{action('MessageController@index')}}">Répondre</a>
+              <input type="hidden" id="idUser" value="{{ $contacts->id_user }}">
+            </td>
           </tr>
         @endforeach
       </table>

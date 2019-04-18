@@ -12,11 +12,12 @@ class HomeController extends Controller
 public function index()
     {
         if (auth()->user()->isAdmin == 1) {
-            $contacts = DB::table('contacts')->get();
+            $contacts = DB::table('contacts')->whereNull('id_user')->get();
+            $msg_user = DB::table('contacts')->whereNotNull('id_user')->get();
             $nb_users = DB::table('users')->count();
             $nb_contacts = DB::table('contacts')->count();
             $name = auth()->user()->name;
-            return view('admin', ['name' => $name,'contacts' => $contacts, 'nb_contacts' => $nb_contacts, 'nb_users' => $nb_users]);
+            return view('admin', ['name' => $name,'contacts' => $contacts,'msg_user' => $msg_user, 'nb_contacts' => $nb_contacts, 'nb_users' => $nb_users]);
             //return view('admin');
 
         } 
@@ -31,6 +32,14 @@ public function logout()
         auth()-> logout();             //deconnecte admin
         return redirect('/');     //redirige sur homepage
     }
+
+public function repondre() {
+    return redirect('/');
 }
+
+}
+
+
+
 
 
