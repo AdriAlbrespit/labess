@@ -50,3 +50,7 @@ Route::get('enfants', function () {
 Route::get('param', function () {
     return view('param');
 });
+
+Route::get('historique', function () {
+    return view('historique');
+});

@@ -98,10 +98,7 @@ desired effect
         <div class="pull-left image">
          <img src="adminlte/img/avatar04.png" class="img-circle" alt="User Image">
         </div>
-        <div class="pull-left info">
-          <p><?=$name?></p>
-        </div>
-      </div>
+
 
       <!-- search form (Optional) -->
       <form action="#" method="get" class="sidebar-form">
@@ -117,8 +114,8 @@ desired effect
 
       <!-- Sidebar Menu -->
       <ul class="sidebar-menu" id="onglets">
-        <li class="active"><a href="home">Tableau de bord</a></li>
-        <li><a href="historique"><span>Historique des dons</span></a></li>
+        <li><a href="home">Tableau de bord</a></li>
+        <li class="active"><a href="historique"><span>Historique des dons</span></a></li>
       </ul>
       <!-- /.sidebar-menu -->
     </section>
@@ -127,97 +124,10 @@ desired effect
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <h1>
-        Messages reçus
 
-        <small>Onglet "Contactez-nous"</small>
-      </h1>
-      <table class ="table table-hover">
-      <thead class="thead-dark">
-        <tr>
-          <th scope="col">Nom</th>
-          <th scope="col">Email</th>
-          <th scope="col">Téléphone</th>
-          <th scope="col">Message</th>
-        </tr>
-      </thead>
-        @foreach ($msg_user as $msg_user)
-          <tr>
-            <td>{{ $msg_user->name }}</td> 
-            <td>{{ $msg_user->email }}</td> 
-            <td>{{ $msg_user->tel }}</td> 
-            <td>{{ $msg_user->message }}</td>
-          </tr>
-        @endforeach
-      </table>
-    </section>
+<br><br>
 
-    <section class="content-header">
-      <h1>
-        Messages reçus des utilisateurs
-      </h1>
-      <table class ="table table-hover">
-      <thead class="thead-dark">
-        <tr>
-          <th scope="col">Nom</th>
-          <th scope="col">Email</th>
-          <th scope="col">Téléphone</th>
-          <th scope="col">Message</th>
-          <th scope="col">Action</th>
-
-        </tr>
-      </thead>
-        @foreach ($contacts as $contacts)
-          <tr>
-            <td>{{ $contacts->name }}</td> 
-            <td>{{ $contacts->email }}</td> 
-            <td>{{ $contacts->tel }}</td> 
-            <td>{{ $contacts->message }}</td>
-            <td>
-              <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{action('MessageController@index')}}">Répondre</a>
-              <input type="hidden" id="idUser" value="{{ $contacts->id_user }}">
-            </td>
-          </tr>
-        @endforeach
-      </table>
-    </section>
-  
-    
-    <!-- Main content -->
-    <section class="content container-fluid">
-      @yield('main')
-<!--<canvas id="myChart"></canvas> -->
-    <h1> Tableau de bord </h1>
-    <canvas width="690" height="200" class="chartjs-render-monitor" id="myChart" style="width: 552px; height: 160px; display: block;"></canvas>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-
-    <script>
-        new Chart(document.getElementById("myChart"), {
-            type: 'bar',
-            data: {
-              labels: ["Nombre d'utilisateurs", "Nombre de contacts"],
-              datasets: [
-                {
-                  label: "Nombre d'intéraction",
-                  backgroundColor: ["#3e95cd", "#8e5ea2"],
-                  data: [<?=json_encode($nb_users);?>,<?=json_encode($nb_contacts);?>]
-                }
-              ]
-            },
-            options: {
-              legend: { display: false },
-              title: {
-                display: true,
-                text: "Nombre d'intéraction"
-              }
-            }
-        });
-    </script>
-    </section>
-    <!-- /.content -->
+        <center><a href="https://www.sandbox.paypal.com/myaccount/home" target="_blank"><button type="submit" class="btn btn-primary" style="width:40%; height:100px; font-size: 35px; background-color: #3c8dbc; color: black; font-family: Montserrat">Historique des dons</button></a></center>
 
   </div>
   <!-- /.content-wrapper -->
