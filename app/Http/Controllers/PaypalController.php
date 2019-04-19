@@ -97,7 +97,7 @@ class PaypalController extends Controller
                 //echo 'Plan ID:' . $plan->getId();
 
                 //Modification manuelle: integrer direction plan id dans .env
-                apache_setenv(PAYPAL_SANDBOX_PLAN_ID, $plan->getId());
+                        //apache_setenv(PAYPAL_SANDBOX_PLAN_ID, $plan->getId());
                 //fin modification manuelle
 
             } catch (PayPal\Exception\PayPalConnectionException $ex) {
@@ -179,7 +179,7 @@ class PaypalController extends Controller
     }
 
 
-    public function souscriptionMensuelle(float montant){
+    /*public function souscriptionMensuelle(float montant){
 
         //Créer un plan
         
@@ -193,12 +193,7 @@ class PaypalController extends Controller
         paypalRedirect()
 
         //Retour de Paypal avc PaypalReturn
-    }
-
-
-
-
-
+    }*/
 
 
 
