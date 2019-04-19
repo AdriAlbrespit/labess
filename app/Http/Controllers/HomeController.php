@@ -35,7 +35,7 @@ public function logout()
 
 public function repondre() {
     return redirect('/');
-}
+    }
 
 }
 
