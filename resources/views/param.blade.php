@@ -134,6 +134,110 @@ desired effect
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
 
+      <br>
+            <div class="card">
+                <div class="card-header"><center><a style="font-size: 30px; color: black">Modifier vos coordonnées</a></center></div><br>
+
+                    <form method="POST" action="{{ route('register') }}">
+                        @csrf
+
+                        <div class="form-group row">
+                            <center><label for="adress" class="col-md-4 col-form-label text-md-right">{{ __('Adresse') }}</label></center>
+
+                            <div class="col-md-6">
+                                <input id="adress" type="text" class="form-control{{ $errors->has('adress') ? ' is-invalid' : '' }}" name="adress" value="{{ old('adress') }}" required autofocus>
+
+                                @if ($errors->has('adress'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('adress') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <center><label for="city" class="col-md-4 col-form-label text-md-right">{{ __('Ville') }}</label></center>
+
+                            <div class="col-md-6">
+                                <input id="city" type="text" class="form-control{{ $errors->has('city') ? ' is-invalid' : '' }}" name="city" value="{{ old('city') }}" required autofocus>
+
+                                @if ($errors->has('city'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('city') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <center><label for="postalcode" class="col-md-4 col-form-label text-md-right">{{ __('Code Postal') }}</label></center>
+
+                            <div class="col-md-6">
+                                <input id="postalcode" type="text" class="form-control{{ $errors->has('postalcode') ? ' is-invalid' : '' }}" name="postalcode" value="{{ old('postalcode') }}" required autofocus>
+
+                                @if ($errors->has('postalcode'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('postalcode') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <center><label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-mail') }}</label></center>
+
+                            <div class="col-md-6">
+                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
+
+                                @if ($errors->has('email'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                    <center><button type="submit" class="btn btn-primary">
+                                    {{ __('Valider') }}
+                                </button></center>
+
+                    <br>
+
+                    <div class="card-header"><center><a style="font-size: 30px; color: black">{{ __('Modifier votre mot de passe') }}</a></center></div>
+
+                    <br>
+
+                        <div class="form-group row">
+                            <center><label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Nouveau mot de passe') }}</label></center>
+
+                            <div class="col-md-6">
+                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+
+                                @if ($errors->has('password'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('password') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <center><label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confimer le mot de passe') }}</label></center>
+
+                            <div class="col-md-6">
+                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                            </div>
+                        </div>
+
+                        <center><button type="submit" class="btn btn-primary">
+                                    {{ __('Valider') }}
+                                </button></center>
+                    </form>
+            </div>
+
+
+
+
     <!-- Main content -->
     <section class="content container-fluid">
       @yield('main')

@@ -12,8 +12,8 @@ class HomeController extends Controller
 public function index()
     {
         if (auth()->user()->isAdmin == 1) {
-            $contacts = DB::table('contacts')->whereNull('id_user')->get();
-            $msg_user = DB::table('contacts')->whereNotNull('id_user')->get();
+            $contacts = DB::table('contacts')->whereNull('id')->get();
+            $msg_user = DB::table('contacts')->whereNotNull('id')->get();
             $nb_users = DB::table('users')->count();
             $nb_contacts = DB::table('contacts')->count();
             $name = auth()->user()->name;

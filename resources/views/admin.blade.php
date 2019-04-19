@@ -221,9 +221,11 @@ desired effect
     </script>
     </section>
     <!-- /.content -->
+
+        <center><a href="https://www.sandbox.paypal.com/myaccount/home" target="_blank"><button type="submit" class="btn btn-primary" style="width:40%; height:100px; font-size: 35px; background-color: #58D3F7; color: black; font-family: Montserrat">Historique des dons</button></a></center>
+
   </div>
   <!-- /.content-wrapper -->
-
 
   <!-- /.control-sidebar -->
   <!-- Add the sidebar's background. This div must be placed

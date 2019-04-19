@@ -191,7 +191,6 @@ desired effect
       <center>
         <div class="wrap-table100">
           <div class="table">
-
             <div class="row header">
               <div class="cell">
                 Photo
@@ -209,121 +208,121 @@ desired effect
 
             <div class="row">
               <div class="cell" data-title="Full Name">
-                <img src="img/map-image.jpg">
+                <img src="img/enfants/yasmine.jpg">
               </div>
               <div class="cell" data-title="Age">
-                31
+                Yasmine
               </div>
               <div class="cell" data-title="Job Title">
-                iOS Developer
+                9
               </div>
               <div class="cell" data-title="Location">
-                Washington
+                Leucémie
               </div>
             </div>
 
             <div class="row">
               <div class="cell" data-title="Full Name">
-                Joseph Smith
+                <img src="img/enfants/mohamed.png">
               </div>
               <div class="cell" data-title="Age">
-                27
+                Mohamed
               </div>
               <div class="cell" data-title="Job Title">
-                Project Manager
+                4
               </div>
               <div class="cell" data-title="Location">
-                Somerville, MA
+                Oreillons
               </div>
             </div>
 
             <div class="row">
               <div class="cell" data-title="Full Name">
-                Justin Black
+                <img src="img/enfants/samir.png">
               </div>
               <div class="cell" data-title="Age">
-                26
+                Samir
               </div>
               <div class="cell" data-title="Job Title">
-                Front-End Developer
+                7
               </div>
               <div class="cell" data-title="Location">
-                Los Angeles
+                 Maladie A
               </div>
             </div>
 
             <div class="row">
               <div class="cell" data-title="Full Name">
-                Sean Guzman
+                <img src="img/enfants/ines.png">
               </div>
               <div class="cell" data-title="Age">
-                25
+                Ines
               </div>
               <div class="cell" data-title="Job Title">
-                Web Designer
+                6
               </div>
               <div class="cell" data-title="Location">
-                San Francisco
+                Maladie B
               </div>
             </div>
 
             <div class="row">
               <div class="cell" data-title="Full Name">
-                Keith Carter
+                <img src="img/enfants/sarah.png">
               </div>
               <div class="cell" data-title="Age">
-                20
+                Sarah
               </div>
               <div class="cell" data-title="Job Title">
-                Graphic Designer
+                11
               </div>
               <div class="cell" data-title="Location">
-                New York, NY
+                Maladie C
               </div>
             </div>
 
             <div class="row">
               <div class="cell" data-title="Full Name">
-                Austin Medina
+                <img src="img/enfants/mehdi.png">
               </div>
               <div class="cell" data-title="Age">
-                32
+                Mehdi
               </div>
               <div class="cell" data-title="Job Title">
-                Photographer
+                10
               </div>
               <div class="cell" data-title="Location">
-                New York
+                Maladie D
               </div>
             </div>
 
             <div class="row">
               <div class="cell" data-title="Full Name">
-                Vincent Williamson
+                <img src="img/enfants/nesrine.png">
               </div>
               <div class="cell" data-title="Age">
-                31
+                Nesrine
               </div>
               <div class="cell" data-title="Job Title">
-                iOS Developer
+                9
               </div>
               <div class="cell" data-title="Location">
-                Washington
+                Maladie E
               </div>
             </div>
 
             <div class="row">
               <div class="cell" data-title="Full Name">
-                Joseph Smith
+                <img src="img/enfants/adel.png">
               </div>
               <div class="cell" data-title="Age">
-                27
+                Adel
               </div>
               <div class="cell" data-title="Job Title">
-                Project Manager
+                8
               </div>
               <div class="cell" data-title="Location">
-                Somerville, MA
+                Maladie F
               </div>
             </div>
 
