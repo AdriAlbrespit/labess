@@ -496,7 +496,12 @@
           </div>
           <div class="modal-body">
             <div class="container">
-              <p>Je souhaites donner par mois:</p>
+              <div class="row">
+                <div class="col-lg-12">
+                <p>Je souhaites donner par mois:</p>
+
+              </div>
+              </div>
                 <div class="row">
                 <div class="col-lg-12">
                     <button onclick="submitvalue(5)" class="btn btn-default" id="don-unique-1" checked="checked">5 €</button>

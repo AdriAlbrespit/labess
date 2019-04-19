@@ -54,8 +54,8 @@ class PaypalController extends Controller
 
         // Create a new billing plan
         $plan = new Plan();
-        $plan->setName('App Name Monthly Billing')
-          ->setDescription('Monthly Subscription to the App Name')
+        $plan->setName('Facturation Mensuelle pour l\'association')
+          ->setDescription('Facturation Mensuelle pour l\'association Labess')
           ->setType('infinite');
 
         // Set billing plan definitions
@@ -94,7 +94,12 @@ class PaypalController extends Controller
                 $plan = Plan::get($createdPlan->getId(), $this->apiContext);
 
                 // Output plan id
-                echo 'Plan ID:' . $plan->getId();
+                //echo 'Plan ID:' . $plan->getId();
+
+                //Modification manuelle: integrer direction plan id dans .env
+                apache_setenv(PAYPAL_SANDBOX_PLAN_ID, $plan->getId());
+                //fin modification manuelle
+
             } catch (PayPal\Exception\PayPalConnectionException $ex) {
                 echo $ex->getCode();
                 echo $ex->getData();
@@ -115,7 +120,7 @@ class PaypalController extends Controller
     public function paypalRedirect(){
         // Create new agreement
         $agreement = new Agreement();
-        $agreement->setName('App Name Monthly Subscription Agreement')
+        $agreement->setName('Facturation Mensuelle pour l\'association Labess')
           ->setDescription('Basic Subscription')
           ->setStartDate(\Carbon\Carbon::now()->addMinutes(5)->toIso8601String());
 
@@ -172,4 +177,30 @@ class PaypalController extends Controller
             echo 'You have either cancelled the request or your session has expired';
         }
     }
+
+
+    public function souscriptionMensuelle(float montant){
+
+        //Créer un plan
+        
+
+            //Integrer le paramètre dans l'établissement du plan
+
+            //Utiliser le plan ID dans le .env
+        create_plan();
+        //Créer l'accord en appelant paypalRedirect
+
+        paypalRedirect()
+
+        //Retour de Paypal avc PaypalReturn
+    }
+
+
+
+
+
+
+
+
+
 }
