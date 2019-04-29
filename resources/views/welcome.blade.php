@@ -277,7 +277,7 @@
           <div class="team-member">
             <button class="w3-button w3-circle btn-don"  data-toggle="modal" data-target="#modalPaiementRecurrent"><img class="mx-auto rounded-circle" src="img/team/2.jpg" alt=""></button>
             <p></p>
-            <p class="text-muted"><i>À venir ...</i></p>
+            <p class="text-muted"><i>S'engager à nous soutenir tous les mois</i></p>
           </div>
         </div>
         <div class="col-sm-4">
@@ -479,7 +479,7 @@
 			</div>
 		</div>
 	        <div class="modal-footer">
-	          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
 	        </div>
 	      </div>
 	    </div>
@@ -496,21 +496,28 @@
           </div>
           <div class="modal-body">
             <div class="container">
-              <p>Je souhaites donner par mois:</p>
+              <div class="row">
+                <div class="col-lg-12">
+                <p>Je m'engage à donner pour l'association Labess 10€ par mois. Cela permettra de garantir certains soins et l'achat de médicaments récurrents.</p>
+
+              </div>
+              </div>
                 <div class="row">
                 <div class="col-lg-12">
-                    <button onclick="submitvalue(5)" class="btn btn-default" id="don-unique-1" checked="checked">5 €</button>
+                    <!--<button onclick="submitvalue(5)" class="btn btn-default" id="don-unique-1" checked="checked">5 €</button>
                     <button onclick="submitvalue(10)" class="btn btn-default" id="don-unique-5">10 €</button>
                     <button onclick="submitvalue(20)" class="btn btn-default" id="don-unique-10">20 €</button>
                     <input id="montantSaisiMensuel" type="number" class="form-control" placeholder="Entrez le montant choisi">
-                    <button onclick="submitvalue(montantSaisiMensuel.value)" class="btn btn-default" id="don-unique-Other">Valider montant saisi</button>
+                    <button onclick="submitvalue(montantSaisiMensuel.value)" class="btn btn-default" id="don-unique-Other">Valider montant saisi</button>-->
+                    <a href="{{route('paypal.redirect')}}">
+                     <button  class="btn btn-success">je souscrie à l'abonnement de 10€ par mois pour Labess</button></a>
                 </div>
         </div>
       </div>
     </div>
           <div class="modal-footer">
-            <button onclick="" class="btn btn-success">je souscrie à l'abonnement</button>
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <!--<button onclick="" class="btn btn-success">je souscrie à l'abonnement</button>-->
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
           </div>
         </div>
       </div>
