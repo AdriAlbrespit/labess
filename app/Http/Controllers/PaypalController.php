@@ -69,8 +69,8 @@ class PaypalController extends Controller
 
         // Set merchant preferences
         $merchantPreferences = new MerchantPreferences();
-        $merchantPreferences->setReturnUrl('http://localhost/payment/public/') //a retoucher
-          ->setCancelUrl('http://localhost/payment/public/') //a retoucher
+        $merchantPreferences->setReturnUrl('http://localhost/labess/public/') //a retoucher
+          ->setCancelUrl('http://localhost/labess/public/') //a retoucher
           ->setAutoBillAmount('yes')
           ->setInitialFailAmountAction('CONTINUE')
           ->setMaxFailAttempts('0');
@@ -93,8 +93,8 @@ class PaypalController extends Controller
                 $createdPlan->update($patchRequest, $this->apiContext);
                 $plan = Plan::get($createdPlan->getId(), $this->apiContext);
 
-                // Output plan id
-                //echo 'Plan ID:' . $plan->getId();
+                //Output plan id
+                echo 'Plan ID:' . $plan->getId();
 
                 //Modification manuelle: integrer direction plan id dans .env
                         //apache_setenv(PAYPAL_SANDBOX_PLAN_ID, $plan->getId());
