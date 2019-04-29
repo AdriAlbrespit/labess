@@ -122,7 +122,7 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Nos missions</h2>
-          <h3 class="section-subheading text-muted"> Venir en aide aux enfants malades en leur procurant les soins pharmaceutiques nécessaires et cela, de façon permanente est notre mission principale. Les accompagner, les aider afin de leur permettre de grandir est notre plus grande ambition. </h3>
+          <h3 class="section-subheading text-muted">La vocation de l’association était de promouvoir l’accès des populations défavorisées à des soins pharmaceutique de qualité.</h3>
         </div>
       </div>
       <div class="row">
@@ -131,8 +131,8 @@
             <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4> Partenariats reconnus </h4>
-            <p class="text-muted"> Grâce à nos pharmacies partenaires, Labess se porte garant de la qualité et de la conformité des médicaments distribués. </p>
+            <h4>Trouver</h4>
+            <p class="text-muted">Les pharmacies partenaires</p>
           </div>
           <div class="portfolio-hover">
             <div class="portfolio-hover-content">
@@ -145,8 +145,8 @@
             <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4> Traçabilité des dons</h4>
-            <p class="text-muted"> Tous les dons récoltés par Labess sont traçables à tout moment, ainsi chaque donateur est assuré de pouvoir suivre en tout temps la destination de sa donation et son utilisation.</p>
+            <h4>Gestion des dons</h4>
+            <p class="text-muted"> Achats et dons des soins et médicaments</p>
           </div>
            <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -159,8 +159,8 @@
             <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4> Transport des produits de santé</h4>
-            <p class="text-muted"> Les soins pharmaceutiques doivent bénéficier d'une attention particulière. Ainsi, tous nos transports sont controlés afin d'assurer la qualité et l'optimalité des soins transportés. </p>
+            <h4>Expédier</h4>
+            <p class="text-muted"> Les soins au populations issus des pays démunis</p>
           </div>
            <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -177,8 +177,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase"> Évènements</h2>
-          <h3 class="section-subheading text-muted"> Suivez notre fil d'actualité ! </h3>
+          <h2 class="section-heading text-uppercase">Évènements</h2>
+          <h3 class="section-subheading text-muted">Suivez notre fil d'actualité ! </h3>
         </div>
       </div>
       <div class="row">
@@ -190,11 +190,11 @@
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h4>10 Janvier 2019</h4>
-                  <h4 class="subheading"> Rencontrez-nous !</h4>
+                  <h4>2019</h4>
+                  <h4 class="subheading">labess est né !</h4>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted"> Nous vous invitons à venir à notre rencontre afin de faire connaissance avec les bénévoles de l'association Labess. Nos motivations, nos ambitions, nos projets mais également nos envies toujours plus grande de donner le meilleur de nous même ! </p>
+                  <p class="text-muted">Des étudiants étrangers désireux d'apporter de l'aide à leur pays d'origines ont décidé de créer LABESS. Leur ambition ? Apporter des soins à des enfants malades issus de milieux démunis et ne pouvant se procurer des médicaments</p>
                 </div>
               </div>
             </li>
@@ -204,11 +204,11 @@
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h4>30 Février 2019 </h4>
-                  <h4 class="subheading"> Récolte de dons </h4>
+                  <h4>March 2011</h4>
+                  <h4 class="subheading">An Agency is Born</h4>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted"> Afin de pouvoir continuer nos actions, nous organisons une récolte de dons qui permettra à Labess de concrétiser les projets avenir. La santé des enfants est notre priorité, aidez nous donc à construire un monde meilleur. </p>
+                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
                 </div>
               </div>
             </li>
@@ -218,11 +218,11 @@
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h4> 10 Mars 2019 </h4>
-                  <h4 class="subheading"> Vente au enchères ! </h4>
+                  <h4>December 2012</h4>
+                  <h4 class="subheading">Transition to Full Service</h4>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted"> Un projet arrive...et pour nous aider à le réaliser nous organisons une récolte de dons sous forme de ventes au enchères. Participez à notre grand vide grenier, c'est pour la bonne action ! </p>
+                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
                 </div>
               </div>
             </li>
@@ -232,11 +232,11 @@
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h4>10 Juillet 2019 </h4>
-                  <h4 class="subheading"> Big Up Project !</h4>
+                  <h4>July 2014</h4>
+                  <h4 class="subheading">Phase Two Expansion</h4>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted"> Soirée ce lancement du grand projet de Labess : Le big up project a pour ambition d'aider des enfants démunis à réaliser des opérations couteuses. Ainsi, grace au dons, Labess financera entièrement ces opérations qui pourront changer la vie d'enfants qui revent de grandir.  </p>
+                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
                 </div>
               </div>
             </li>
@@ -277,7 +277,7 @@
           <div class="team-member">
             <button class="w3-button w3-circle btn-don"  data-toggle="modal" data-target="#modalPaiementRecurrent"><img class="mx-auto rounded-circle" src="img/team/2.jpg" alt=""></button>
             <p></p>
-            <p class="text-muted"><i>À venir ...</i></p>
+            <p class="text-muted"><i>S'engager à nous soutenir tous les mois</i></p>
           </div>
         </div>
         <div class="col-sm-4">
@@ -479,7 +479,7 @@
 			</div>
 		</div>
 	        <div class="modal-footer">
-	          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
 	        </div>
 	      </div>
 	    </div>
@@ -496,21 +496,28 @@
           </div>
           <div class="modal-body">
             <div class="container">
-              <p>Je souhaites donner par mois:</p>
+              <div class="row">
+                <div class="col-lg-12">
+                <p>Je m'engage à donner pour l'association Labess 10€ par mois. Cela permettra de garantir certains soins et l'achat de médicaments récurrents.</p>
+
+              </div>
+              </div>
                 <div class="row">
                 <div class="col-lg-12">
-                    <button onclick="submitvalue(5)" class="btn btn-default" id="don-unique-1" checked="checked">5 €</button>
+                    <!--<button onclick="submitvalue(5)" class="btn btn-default" id="don-unique-1" checked="checked">5 €</button>
                     <button onclick="submitvalue(10)" class="btn btn-default" id="don-unique-5">10 €</button>
                     <button onclick="submitvalue(20)" class="btn btn-default" id="don-unique-10">20 €</button>
                     <input id="montantSaisiMensuel" type="number" class="form-control" placeholder="Entrez le montant choisi">
-                    <button onclick="submitvalue(montantSaisiMensuel.value)" class="btn btn-default" id="don-unique-Other">Valider montant saisi</button>
+                    <button onclick="submitvalue(montantSaisiMensuel.value)" class="btn btn-default" id="don-unique-Other">Valider montant saisi</button>-->
+                    <a href="{{route('paypal.redirect')}}">
+                     <button  class="btn btn-success">je souscrie à l'abonnement de 10€ par mois pour Labess</button></a>
                 </div>
         </div>
       </div>
     </div>
           <div class="modal-footer">
-            <button onclick="" class="btn btn-success">je souscrie à l'abonnement</button>
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <!--<button onclick="" class="btn btn-success">je souscrie à l'abonnement</button>-->
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
           </div>
         </div>
       </div>
