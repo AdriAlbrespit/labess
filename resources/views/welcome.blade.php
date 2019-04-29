@@ -204,7 +204,7 @@
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h4>30 Février 2019 </h4>
+                  <h4>28 Février 2019 </h4>
                   <h4 class="subheading"> Récolte de dons </h4>
                 </div>
                 <div class="timeline-body">
@@ -242,9 +242,9 @@
             </li>
             <li class="timeline-inverted">
               <div class="timeline-image">
-                <h4>Abonnez-vous
-                  <br>à notre
-                  <br>Newsletter!</h4>
+                <h4>Abonnement
+                  <br>à la Newsletter
+                  <br>prochainement</h4>
               </div>
             </li>
           </ul>
